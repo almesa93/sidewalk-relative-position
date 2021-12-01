@@ -2,8 +2,6 @@
 
 <img src="https://media.istockphoto.com/photos/suburban-sidewalk-picture-id172338416?b=1&k=20&m=172338416&s=170667a&w=0&h=D39OO3Q6E6m5k_jwl3CrIDCfQu0VZvEbfdEKkP21Zy4=" alt="drawing" width="600"/>
 
-This repository contains a prediction model that provides your relative position on the sidewalk.
-
 Este proyecto consiste en un modelo de predicción para el reconocimiento de la posición relativa de una persona en la acera a través de los frames obtenidos de una cámara en directo.
 
 Para ello, se entrena un modelo de redes convolucionales con miles de fotos con distintas imágenes desde distintas posiciones en la acera. Para más información, véase el fichero ‘train.py’.
