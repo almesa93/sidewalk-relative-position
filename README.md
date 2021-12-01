@@ -22,6 +22,7 @@ Una vez realizado el dataset, se han realizado las siguientes pruebas bajo las m
 6.	La sexta y última prueba fue simplemente mejorar el brillo y el contraste de la imagen original. Los resultados obtenidos fueron prácticamente los mismos pero con un             error bastante menor.
 7.	Tras varias pruebas aumentando la complejidad de los modelos, la predicción empeoraba, por lo que la red neuronal final fue la siguiente:
 
+```
 first_layer_conv = 64
 second_layer_conv = 128
 activation = 'relu'
@@ -33,7 +34,7 @@ final_activation = 'softmax'
 batch_size = 32
 epochs = 20
 validation_split = 0.2
-```
+
 layers = [keras.layers.Conv2D(first_layer_conv, (3,3), activation=activation, input_shape=image_size),
             keras.layers.MaxPooling2D(pool_size=(2,2)),
 
