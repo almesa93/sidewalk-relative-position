@@ -22,7 +22,7 @@ Una vez realizado el dataset, se han realizado las siguientes pruebas bajo las m
 4.	Las imágenes de la cuarta prueba se sometieron a una división en los 3 canales de color RGB que componen todas y se evaluaron de forma independiente
 5.	En la quinta prueba, se hicieron dos postprocesados, primero se pasó a escala de grises y luego se obtuvieron los negativos a partir de estas imágenes.
 6.	La sexta y última prueba fue simplemente mejorar el brillo y el contraste de la imagen original. Los resultados obtenidos fueron prácticamente los mismos pero con un             error bastante menor.
-7.          Tras varias pruebas aumentando la complejidad de los modelos, la predicción empeoraba, por lo que la red neuronal final fue la siguiente:
+7.	Tras varias pruebas aumentando la complejidad de los modelos, la predicción empeoraba, por lo que la red neuronal final fue la siguiente:
 
 first_layer_conv = 64
 second_layer_conv = 128
