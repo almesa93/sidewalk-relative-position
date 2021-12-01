@@ -9,11 +9,13 @@ Este proyecto consiste en un modelo de predicción para el reconocimiento de la 
 Para ello, se entrena un modelo de redes convolucionales con miles de fotos con distintas imágenes desde distintas posiciones en la acera. Para más información, véase el fichero ‘train.py’.
 
 El dataset se ha realizado de la siguiente forma:
+
 1.	Extracción de los frames de vídeos grabados.
 2.	Recorte de las imágenes para eliminar la información no relevante.
 3.	Clasificación de las imágenes manualmente en función de la posición de la línea de la acera con respecto al margen opuesto de cada una de ellas
 
 Una vez realizado el dataset, se han realizado las siguientes pruebas bajo las mismas condiciones en la red convolucional:
+
 1.	En la primera prueba, se han introducido las imágenes sin realizar ningún tipo de postprocesado.
 2.	La segunda prueba se llevó a cabo con una conversión de la imagen de RGB a escala de grises.
 3.	En la tercera prueba, se transformaron los colores a sus negativos con la finalidad de destacar otros aspectos de las imágenes
