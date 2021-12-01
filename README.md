@@ -33,7 +33,7 @@ final_activation = 'softmax'
 batch_size = 32
 epochs = 20
 validation_split = 0.2
-
+```
 layers = [keras.layers.Conv2D(first_layer_conv, (3,3), activation=activation, input_shape=image_size),
             keras.layers.MaxPooling2D(pool_size=(2,2)),
 
@@ -61,5 +61,5 @@ history_6 = model_train(model_6,
                 batch_size = batch_size,
                 epochs = epochs,
                 validation_split = validation_split)
-
+```
 El archivo ‘app.py’ contiene un script que, a través de una cámara, recoge frames de vídeo en directo y los manda al modelo elegido para predecir la posición dentro de la acera en la que se encuentra.
