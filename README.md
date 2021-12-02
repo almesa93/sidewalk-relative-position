@@ -63,4 +63,6 @@ history_6 = model_train(model_6,
                 epochs = epochs,
                 validation_split = validation_split)
 ```
+Al final, se obtuvo un 'accuracy' del 63% y un 'loss' de 2.3, bastante por encima de lo esperado ya que el dataset es propio y clasificado manualmente.
+
 El archivo ‘app.py’ contiene un script que, a través de una cámara, recoge frames de vídeo en directo y los manda al modelo elegido para predecir la posición dentro de la acera en la que se encuentra.
