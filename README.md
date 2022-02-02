@@ -63,6 +63,6 @@ history_6 = model_train(model_6,
                 epochs = epochs,
                 validation_split = validation_split)
 ```
-Al final, se obtuvo un 'accuracy' del 63% y un 'loss' de 2.3, bastante por encima de lo esperado ya que el dataset es propio y clasificado manualmente.
+In the end, an 'accuracy' of 63% and a 'loss' of 2.3 were obtained, well above what was expected since the dataset is proprietary and manually classified.
 
-El archivo ‘app.py’ contiene un script que, a través de una cámara, recoge frames de vídeo en directo y los manda al modelo elegido para predecir la posición dentro de la acera en la que se encuentra.
+The 'app.py' file contains a script that, through a camera, collects live video frames and sends them to the chosen model to predict the position within the sidewalk in which it is located.
