@@ -2,25 +2,25 @@
 
 <img src="https://media.istockphoto.com/photos/suburban-sidewalk-picture-id172338416?b=1&k=20&m=172338416&s=170667a&w=0&h=D39OO3Q6E6m5k_jwl3CrIDCfQu0VZvEbfdEKkP21Zy4=" alt="drawing" width="600"/>
 
-Este proyecto consiste en un modelo de predicción para el reconocimiento de la posición relativa de una persona en la acera a través de los frames obtenidos de una cámara en directo.
+This project consists in a prediction model to recognize of the relative position of a person on the sidewalk through the frames obtained from a live camera.
 
-Para ello, se entrena un modelo de redes convolucionales con miles de fotos con distintas imágenes desde distintas posiciones en la acera. Para más información, véase el fichero ‘train.py’.
+To do this, a convolutional network model has been trained with thousands of photos from different positions on the sidewalk. For more information, see the 'train.py' file.
 
-El dataset se ha realizado de la siguiente forma:
+The dataset has been made in the following way:
 
-1.	Extracción de los frames de vídeos grabados.
-2.	Recorte de las imágenes para eliminar la información no relevante.
-3.	Clasificación de las imágenes manualmente en función de la posición de la línea de la acera con respecto al margen opuesto de cada una de ellas
+1.	Extraction of recorded video frames.
+2.	Crop images to remove non-relevant information.
+3.	Classification of the images manually based on the position of the sidewalk line with respect to the opposite margin of each one of them.
 
-Una vez realizado el dataset, se han realizado las siguientes pruebas bajo las mismas condiciones en la red convolucional:
+Once the dataset has been made, the following tests have been carried out under the same conditions in the convolutional network:
 
-1.	En la primera prueba, se han introducido las imágenes sin realizar ningún tipo de postprocesado.
-2.	La segunda prueba se llevó a cabo con una conversión de la imagen de RGB a escala de grises.
-3.	En la tercera prueba, se transformaron los colores a sus negativos con la finalidad de destacar otros aspectos de las imágenes
-4.	Las imágenes de la cuarta prueba se sometieron a una división en los 3 canales de color RGB que componen todas y se evaluaron de forma independiente
-5.	En la quinta prueba, se hicieron dos postprocesados, primero se pasó a escala de grises y luego se obtuvieron los negativos a partir de estas imágenes.
-6.	La sexta y última prueba fue simplemente mejorar el brillo y el contraste de la imagen original. Los resultados obtenidos fueron prácticamente los mismos pero con un             error bastante menor.
-7.	Tras varias pruebas aumentando la complejidad de los modelos, la predicción empeoraba, por lo que la red neuronal final fue la siguiente:
+1.	In the first test, the images have been entered without performing any type of post-processing.
+2.	The second test was carried out with a conversion of the image from RGB to grayscale.
+3.	In the third test, the colors were transformed into their negatives in order to highlight other aspects of the images.
+4.	The images of the fourth test were divided into the 3 RGB color channels that make up all of them and were evaluated independently.
+5.	In the fifth test, two post-processes were made, first it was changed to gray scale and then the negatives were obtained from these images.
+6.	The sixth and final test was simply to improve the brightness and contrast of the original image. The results obtained were practically the same but with a much                 smaller error.
+7.	After several tests increasing the complexity of the models, the prediction worsened, so the final neural network was the following:
 
 ```
 first_layer_conv = 64
